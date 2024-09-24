@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         fun getLength(arr: ArrayList<String>): Int {
             return arr.size
         }
-        Log.e("","The size of Array String is : ${getLength(arrayString)}")
+//        Log.e("","The size of Array String is : ${getLength(arrayString)}")
 
 
         val btnLeapYear = findViewById<Button>(R.id.btnLeapYear)
@@ -49,23 +49,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnScopeFunction.setOnClickListener {
-            val intent = Intent(this, LeapYearActivity::class.java)
+            val intent = Intent(this, ScopeActivity::class.java)
             startActivity(intent)
         }
-
-
-        //2. Conditional Logic
-//        fun checkLeapYear(year: Int): Boolean {
-//            if (year % 4 == 0){
-//                if (year % 100 == 0) {
-//                    if (year % 400 ==0) {
-//                        return true
-//                    } else return false
-//                } else return false
-//            }else return false
-//        }
-
-
-
     }
 }
