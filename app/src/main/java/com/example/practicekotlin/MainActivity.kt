@@ -21,8 +21,6 @@ class MainActivity : AppCompatActivity() {
         fun getLength(arr: ArrayList<String>): Int {
             return arr.size
         }
-//        Log.e("","The size of Array String is : ${getLength(arrayString)}")
-
 
         val btnLeapYear = findViewById<Button>(R.id.btnLeapYear)
         val btnTestResult = findViewById<Button>(R.id.btnTestResult)
