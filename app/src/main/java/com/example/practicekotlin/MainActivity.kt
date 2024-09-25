@@ -2,12 +2,9 @@ package com.example.practicekotlin
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +27,8 @@ class MainActivity : AppCompatActivity() {
         val btnLeapYear = findViewById<Button>(R.id.btnLeapYear)
         val btnTestResult = findViewById<Button>(R.id.btnTestResult)
         val btnCarFunction = findViewById<Button>(R.id.btnCarFunction)
-        val btnScopeFunction = findViewById<Button>(R.id.btnScopeFunction)
+        val btnScopeFunction1 = findViewById<Button>(R.id.btnScopeFunction)
+        val btnScopeFunction2 = findViewById<Button>(R.id.btnScopeFunction2)
 
 
         btnLeapYear.setOnClickListener {
@@ -48,9 +46,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnScopeFunction.setOnClickListener {
-            val intent = Intent(this, ScopeActivity::class.java)
+        btnScopeFunction1.setOnClickListener {
+            val intent = Intent(this, Scope1Activity::class.java)
             startActivity(intent)
         }
+
+        btnScopeFunction2.setOnClickListener {
+            val intent = Intent(this, Scope2Activity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

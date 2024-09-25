@@ -52,7 +52,17 @@
 
     <Button
         android:id="@+id/btnScopeFunction"
-        android:text="Scope Function"
+        android:text="Scope Function 1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2a9d8f"
+        android:layout_width="180dp"
+        android:layout_height="45dp"/>
+
+    <Button
+        android:id="@+id/btnScopeFunction2"
+        android:text="Scope Function 2"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
