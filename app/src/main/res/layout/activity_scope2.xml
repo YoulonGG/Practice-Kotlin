@@ -30,11 +30,10 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/txtLeapYear"
-        android:hint="Enter Your Name"
+        android:id="@+id/txtScopeName"
+        android:hint="Enter Something"
         android:layout_marginTop="50dp"
         android:paddingHorizontal="16dp"
-        android:inputType="number"
         app:layout_constraintTop_toBottomOf="@id/headerText"
         android:textColor="@color/black"
         android:layout_marginHorizontal="42dp"
@@ -45,7 +44,7 @@
     <LinearLayout
         android:id="@+id/linear"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/txtLeapYear"
+        app:layout_constraintTop_toBottomOf="@id/txtScopeName"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_marginTop="24dp"
@@ -79,14 +78,30 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Result"
+        android:layout_marginHorizontal="42dp"
+        android:textColor="#e76f51"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <TextView
         android:id="@+id/txtResultScope"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="24sp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="42dp"
         android:gravity="center"
-        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingVertical="5dp"
         android:textColor="#0fa3b1"
-        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintTop_toBottomOf="@id/resultText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="45dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
